@@ -1,0 +1,12 @@
+.bacground{
+    background-image: url(../img/wood-website-sign.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    background-origin: border-box;
+    background-position: center;
+}
+
+.font-bold{
+font-family: 'Luckiest Guy', cursive;
+}
