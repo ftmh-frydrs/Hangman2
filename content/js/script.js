@@ -23,7 +23,7 @@ function Random() {
 function keyboard() {
    let btnKeyboard ="qwertyuiopasdfghjklzxcvbnm".split('').map(e =>
         `
-        <button class="btnEl border m-1 md:w-12 md:h-12 w-8 h-8 rounded-lg"
+        <button class="btnEl border m-1 h-8 w-8 rounded-lg"
         id='` + e + `'
         onClick="handeling('` + e + `')"
         >
