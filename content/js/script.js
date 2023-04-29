@@ -1,13 +1,59 @@
 
 
-var fruit = [
-    "apple",
-    "blueberry",
-    "mandarin",
-    "pineapple",
-    "pomegranate",
-    "watermelon",
-];
+// var fruit = [
+//     "apple",
+//     "blueberry",
+//     "mandarin",
+//     "pineapple",
+//     "pomegranate",
+//     "watermelon",
+// ];
+
+var words = {
+        colors: [
+            "red",
+            "green",
+            "blue",
+            "yellow",
+            "orange",
+            "purple"
+        ],
+        cars: [
+            "mustang",
+            "corvette",
+            "camaro",
+            "challenger",
+            "charger",
+            "ferrari"
+        ],
+        fruits: [
+            "apple",
+            "blueberry",
+            "mandarin",
+            "pineapple",
+            "pomegranate",
+            "watermelon"
+        ]
+    };
+
+
+function selectCategory(category) {
+  switch(category) {
+    case 'colors':
+      words = ['red', 'blue', 'green', 'yellow', 'purple', 'orange'];
+      break;
+    case 'cars':
+      words = ['mustang', 'camaro', 'corvette', 'charger', 'challenger', 'ferrari'];
+      break;
+    case 'fruits':
+      words = ['apple', 'banana', 'orange', 'grape', 'kiwi', 'pineapple'];
+      break;
+    default:
+      words = ['hangman', 'game', 'javascript', 'programming', 'computer', 'web'];
+  }
+  reset();
+}
+
 
 let min = 0;
 let max = 6;
@@ -17,7 +63,7 @@ let text = [];
 let guessed = false;
 
 function Random() {
-    answer = fruit[Math.floor(Math.random() * 6)]
+    answer = words[Math.floor(Math.random() * 6)]
 }
 
 function keyboard() {
